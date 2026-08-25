@@ -1,23 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Menentukan bahwa dokumen ini menggunakan standar HTML5 -->
 <html lang="en">
+<!-- Tag utama pembungkus seluruh kode HTML, dengan bahasa pengantar Inggris ("en") -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Bagian head menyimpan informasi belakang layar (metadata) yang tidak langsung terlihat di halaman web -->
+    <meta charset="UTF-8" />
+    <!-- Mengatur karakter encoding ke UTF-8 agar teks, angka, dan simbol standar dapat ditampilkan dengan benar -->
+    <title>CatPhotoApp</title>
+    <!-- Judul halaman yang akan muncul pada tab browser -->
 </head>
 
 <body>
+    <!-- Bagian body berisi semua konten visual yang akan dilihat oleh pengguna di layar -->
+
     <main>
-        <h1>CatPhotoApp</h1>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
-            online!</p>
-        <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-            alt="A cute orange cat lying on its back.">
+        <!-- Memandai area konten utama pada halaman web -->
+
+        <!-- Bagian 1: Galeri & Foto Kucing -->
+        <section>
+            <!-- Menandai sebuah kelompok konten/topik yang saling berhubungan -->
+            <h1>CatPhotoApp</h1>
+            <!-- Heading tingkat 1: Judul paling besar dan utama di halaman -->
+            <h2>Cat Photos</h2>
+            <!-- Heading tingkat 2: Subjudul bagian foto kucing -->
+
+            <!-- Paragraf dengan tautan yang akan membuka gambar di tab yang sama -->
+            <p>
+                Everyone loves
+                <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
+                online!
+            </p>
+
+            <!-- Paragraf dengan tautan target="_blank" untuk membuka web di TAB BARU -->
+            <p>
+                See more
+                <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
+                in our gallery.
+            </p>
+
+            <!-- Gambar yang dibungkus tautan: Klik pada gambar kucing ini akan mengarahkan ke link freecatphotoapp.com -->
+            <a href="https://freecatphotoapp.com">
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back." />
+                <!-- src = lokasi gambar, alt = deskripsi gambar jika gagal dimuat -->
+            </a>
+        </section>
+
+        <!-- Bagian 2: Daftar Kesukaan & Ketidaksukaan Kucing -->
+        <section>
+            <h2>Cat Lists</h2>
+            <!-- Subjudul bagian daftar -->
+
+            <h3>Things cats love:</h3>
+            <!-- Heading tingkat 3: Judul daftar -->
+
+            <!-- Unordered List (ul): Daftar yang menggunakan simbol bullet (titik hitam) -->
+            <ul>
+                <li>catnip</li>
+                <!-- li (list item): Anggota dari daftar -->
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+
+            <!-- Figure & Figcaption: Pembungkus media/gambar beserta teks keterangannya -->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate." />
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                <!-- figcaption = teks keterangan gambar | em = teks cetak miring (penekanan halus) -->
+            </figure>
+
+            <h3>Top 3 things cats hate:</h3>
+
+            <!-- Ordered List (ol): Daftar berurutan menggunakan angka (1, 2, 3) -->
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Two tabby kittens sleeping together on a couch." />
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                <!-- strong = teks cetak tebal (penekanan kuat) -->
+            </figure>
+        </section>
     </main>
+
+    <!-- Footer: Bagian bawah/catatan kaki halaman web -->
+    <footer>
+        <p>
+            No Copyright -
+            <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+            <!-- Tautan sumber hak cipta/referensi -->
+        </p>
+    </footer>
 </body>
 
 </html>
