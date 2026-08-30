@@ -1,9 +1,116 @@
-<div>
-  <p>Example paragraph element.</p>
-</div>
-<!-- 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <p>Example paragraph element.</p>
+  </div>
+  <!-- 
 Editor InteraktifUbah contoh kode statis menjadi editor interaktif. Hal ini memungkinkan Anda untuk mengedit dan menjalankan kode langsung pada halaman.
 Apa Itu Elemen Div dan Kapan Anda Harus Menggunakannya?
 The div elemen digunakan sebagai wadah untuk mengelompokkan elemen lainnya.
 
 Berikut adalah contoh dari sebuah div element. Tambahkan elemen paragraf lain di dalam div elemen dan lihat perubahan di jendela pratinjau. Untuk melihat pratinjaunya, Anda perlu mengaktifkan editor interaktif. -->
+  <!-- ==========================================================================
+   DOKUMENTASI LENGKAP ELEMEN HTML <div> (CONTENT DIVISION ELEMENT)
+   ========================================================================== -->
+
+  <!-- 
+  1. DEFINISI & FUNGSI UTAMA
+  ---------------------------------------------------------------------------
+  Elemen <div> adalah kontainer generik berbasis block-level di HTML.
+  Elemen ini tidak memiliki makna semantik tersendiri (tidak memberikan arti 
+  khusus pada konten di dalamnya kepada browser, search engine, atau pembaca layar).
+  
+  Fungsi utama <div> adalah mengelompokkan elemen-elemen HTML lain untuk:
+  - Kemudahan styling dengan CSS (Flexbox, Grid, Spacing, Positioning).
+  - Manipulasi DOM menggunakan JavaScript (Event handling, dynamic content).
+  - Pengaturan struktur tata letak (layout container).
+-->
+
+  <!-- 
+  2. KARAKTERISTIK SIFAT ELEMEN <div>
+  ---------------------------------------------------------------------------
+  * Block-Level Element:
+    - Secara bawaan (default) mengambil lebar 100% dari kontainer induknya.
+    - Memulai di baris baru dan memaksa elemen setelahnya berpindah baris.
+    - Properti width, height, margin, dan padding dapat diatur penuh via CSS.
+
+  * Non-Semantik:
+    - Tidak memberikan informasi konteks struktural (berbeda dari <header> atau <article>).
+    - Digunakan sebagai opsi terakhir saat tidak ada elemen semantik HTML5 yang sesuai.
+-->
+
+  <!-- 
+  3. ATRIBUT UTAMA YANG SERING DIGUNAKAN
+  ---------------------------------------------------------------------------
+  - class="..."    : Mengelompokkan style CSS dan selektor JavaScript.
+  - id="..."       : Identifikasi unik elemen (maksimal 1 per halaman).
+  - style="..."    : Menambahkan style CSS secara inline (gunakan seperlunya).
+  - data-*="..."   : Menyimpan data kustom yang dapat dibaca via JavaScript.
+  - role="..."     : Menambahkan aksesibilitas ARIA jika <div> dibuat interaktif.
+  - tabindex="..." : Menentukan urutan navigasi tombol Tab keyboard.
+-->
+
+  <!-- 
+  4. CONTOH IMPLEMENTASI KODE
+  ---------------------------------------------------------------------------
+-->
+
+  <!-- Contoh A: Structure Component Card -->
+  <div class="card-container" id="user-card-101" data-user-role="admin">
+    <div class="card-header">
+      <img src="avatar.jpg" alt="Foto Profil" class="avatar-img" />
+      <h3 class="user-name">Budi Santoso</h3>
+    </div>
+    <div class="card-body">
+      <p class="user-bio">
+        Frontend Developer yang fokus pada aksesibilitas web.
+      </p>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn-action">Lihat Profil</button>
+    </div>
+  </div>
+
+  <!-- Contoh B: Wrapper Layout Flexbox / Grid -->
+  <div class="grid-wrapper" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px">
+    <div class="grid-item">Konten 1</div>
+    <div class="grid-item">Konten 2</div>
+    <div class="grid-item">Konten 3</div>
+  </div>
+
+  <!-- 
+  5. BEST PRACTICES & KAPAN HARUS DIHINDARI
+  ---------------------------------------------------------------------------
+  [Bolehkah Menggunakan <div>?]
+  ✓ BOLEH  : Untuk wrapper tata letak (seperti kontainer Flexbox / CSS Grid).
+  ✓ BOLEH  : Untuk keperluan dekoratif murni (misal: overlay modal, background shape).
+  ✓ BOLEH  : Jika memang tidak ada elemen semantik yang cocok.
+
+  [Kapan Harus Hindari <div>?]
+  ✗ HINDARI: Menjadikan <div> sebagai tombol (gunakan elemen <button>).
+  ✗ HINDARI: Menjadikan <div> sebagai navigasi utama (gunakan elemen <nav>).
+  ✗ HINDARI: Menjadikan <div> sebagai judul utama (gunakan elemen <h1> - <h6>).
+  ✗ HINDARI: "Divitis" (Anti-pattern penumpukan <div> terlalu banyak tanpa alasan).
+
+  [Perbandingan <div> vs Elemen Semantik HTML5]
+  ---------------------------------------------------------------------------
+  Tujuan Konten               | Elemen Semantik        | Penggunaan <div> (Buruk)
+  ----------------------------|------------------------|------------------------------
+  Navigasi Utama              | <nav>                  | <div class="nav">
+  Header Halaman / Bagian     | <header>               | <div class="header">
+  Footer Halaman              | <footer>               | <div class="footer">
+  Artikel / Post Mandiri      | <article>              | <div class="post">
+  Seksi Topik Khusus          | <section>              | <div class="section">
+  Konten Sampingan / Sidebar  | <aside>                | <div class="sidebar">
+-->
+</body>
+
+</html>
