@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- 
+  DOCTYPE
+  Fungsinya memberi tahu browser bahwa dokumen ini menggunakan 
+  standar HTML5. Tanpa ini, browser bisa masuk ke "quirks mode" 
+  (mode kompatibilitas lawas) yang bikin CSS dan layout dirender 
+  dengan aturan HTML jadul yang tidak konsisten antar browser.
+-->
+<html lang="en">
+<!-- 
+  HTML + LANG
+  Elemen <html> adalah akar (root) dari seluruh dokumen — semua 
+  elemen lain jadi "anak"-nya. Atribut lang="en" fungsinya memberi 
+  tahu browser dan screen reader bahasa utama konten ini bahasa 
+  Inggris, supaya screen reader tahu pelafalan yang benar dan 
+  Google tahu untuk menargetkan pencarian bahasa apa.
+-->
+
+<head>
+    <!-- 
+    HEAD
+    Fungsinya sebagai "kantor administrasi" halaman — isinya 
+    metadata yang TIDAK ditampilkan langsung ke pengguna di layar, 
+    tapi dibaca oleh browser, mesin pencari, dan platform sosial 
+    media untuk memahami/memproses halaman ini.
+  -->
+    <title>Travel Agency</title>
+    <!-- 
+      TITLE
+      Fungsinya sebagai identitas utama halaman. Nilainya dipakai 
+      browser untuk teks di tab, dipakai Google sebagai judul biru 
+      yang diklik di hasil pencarian, dan dipakai browser sebagai 
+      teks default saat halaman di-bookmark.
+    -->
+
+    <meta name="description" content="agenda travel">
+    <!-- 
+      META DESCRIPTION
+      Fungsinya sebagai ringkasan halaman yang dibaca mesin pencari 
+      untuk ditampilkan sebagai cuplikan (snippet) teks di bawah 
+      judul pada hasil pencarian. Tidak terlihat oleh pengguna 
+      kecuali lewat hasil pencarian.
+    -->
+
+    <meta charset="UTF-8">
+    <!-- 
+      CHARSET
+      Fungsinya menentukan sistem pengkodean karakter yang dipakai 
+      untuk menerjemahkan byte data jadi huruf/simbol yang tampil 
+      di layar. UTF-8 dipilih karena mendukung hampir semua karakter 
+      di dunia (huruf Latin, Kanji, Arab, emoji, dll) dalam satu 
+      standar yang sama.
+    -->
+</head>
+
+<body>
+    <!-- 
+    BODY
+    Fungsinya sebagai wadah seluruh KONTEN yang benar-benar 
+    ditampilkan dan bisa dilihat/diinteraksikan pengguna di layar 
+    browser — kebalikan dari <head> yang isinya metadata tersembunyi.
+  -->
+
+    <h1>
+        travel to the world
+    </h1>
+    <!-- 
+      H1
+      Fungsinya sebagai penanda topik/judul PALING UTAMA dari seluruh 
+      konten halaman ini secara struktural. Browser secara default 
+      merendernya dengan ukuran font terbesar, dan mesin pencari 
+      memakainya sebagai sinyal kuat tentang topik utama halaman.
+    -->
+    <p>menyajikan keliling dunia</p>
+    <!-- 
+      P (PARAGRAPH)
+      Fungsinya membungkus teks naratif/kalimat biasa. Secara default 
+      browser otomatis memberi jarak (margin) di atas dan bawahnya, 
+      memisahkan tiap blok teks agar tidak menyatu jadi satu paragraf 
+      panjang yang sulit dibaca.
+    -->
+
+    <h2>Packages</h2>
+    <!-- 
+      H2
+      Fungsinya sebagai sub-topik di bawah h1 — menandakan level 
+      hierarki kedua dalam struktur dokumen (seperti bab dalam buku, 
+      h1 = judul buku, h2 = judul bab). Ini membantu browser 
+      membangun "outline" dokumen yang bisa dibaca screen reader 
+      untuk navigasi cepat antar section.
+    -->
+    <p>meliputi</p>
+
+    <ul>
+        <!-- 
+      UL (UNORDERED LIST)
+      Fungsinya mengelompokkan beberapa item yang levelnya SEJAJAR 
+      dan urutannya TIDAK PENTING (beda dengan <ol> yang urutannya 
+      penting, misal langkah-langkah). Browser otomatis merender 
+      tiap item dengan bullet point (•) di depannya.
+    -->
+        <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+        <!-- 
+        LI (LIST ITEM)
+        Fungsinya membungkus satu unit/butir data di dalam list. 
+        Elemen ini WAJIB berada di dalam <ul> atau <ol> — tidak 
+        valid kalau berdiri sendiri di luar itu.
+      -->
+        <!-- 
+        A (ANCHOR) dengan HREF
+        Fungsinya membuat elemen ini bisa DIKLIK dan membawa 
+        pengguna ke alamat lain (halaman lain, file, atau bagian 
+        halaman yang sama). Atribut href adalah "tujuan" link — 
+        tanpa href, tag <a> hanya jadi teks biasa tanpa fungsi 
+        navigasi apa pun.
+      -->
+        <!-- 
+        TARGET="_BLANK"
+        Fungsinya menentukan DI MANA halaman tujuan akan dibuka. 
+        Nilai "_blank" artinya buka di tab/jendela browser yang 
+        baru, jadi halaman asal (travel agency ini) tetap terbuka 
+        dan tidak hilang saat pengguna mengklik link tersebut.
+      -->
+        <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+
+    <h2>
+        Top Itineraries
+    </h2>
+    <!-- 
+      H2 (kedua)
+      Fungsinya sama seperti h2 sebelumnya — sub-judul level dua — 
+      tapi untuk section yang berbeda (bagian galeri foto di bawah). 
+      Boleh ada BANYAK h2 dalam satu halaman, beda dengan h1 yang 
+      idealnya cuma satu.
+    -->
+
+    <figure>
+        <!-- 
+      FIGURE
+      Fungsinya mengelompokkan konten visual (gambar, diagram, 
+      kode, dll) BESERTA keterangannya menjadi satu unit yang 
+      "berdiri sendiri" secara makna — artinya kalau figure ini 
+      dipindah ke bagian lain dokumen, dia tetap bisa dipahami 
+      tanpa kehilangan konteks.
+    -->
+        <a href="https://www.freecodecamp.org/learn" target="_blank">
+            <!-- 
+        A (di dalam figure)
+        Fungsinya sama seperti anchor sebelumnya (membuat elemen 
+        di dalamnya bisa diklik), tapi di sini yang "dibungkus" 
+        bukan teks, melainkan gambar — jadi seluruh area gambar 
+        jadi area yang bisa diklik untuk membuka link.
+      -->
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="colloseum">
+            <!-- 
+          IMG dengan SRC dan ALT
+          Fungsi src: menunjuk ke lokasi/alamat file gambar yang 
+          harus diambil dan ditampilkan browser. Fungsi alt: 
+          menyediakan teks alternatif yang muncul kalau gambar 
+          gagal dimuat, dan dibacakan oleh screen reader untuk 
+          pengguna tunanetra — jadi bukan sekadar formalitas, 
+          tapi fungsi aksesibilitas nyata.
+        -->
+        </a>
+        <figcaption>descript</figcaption>
+        <!-- 
+        FIGCAPTION
+        Fungsinya memberi keterangan/label tertulis untuk konten 
+        di dalam figure induknya. Secara semantik, browser dan 
+        screen reader tahu bahwa teks ini adalah "caption" khusus 
+        untuk gambar di atasnya, bukan paragraf biasa yang berdiri 
+        sendiri.
+      -->
+    </figure>
+
+    <figure>
+        <a href="https://www.freecodecamp.org/learn" target="_blank">
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="mount">
+        </a>
+        <figcaption>descript</figcaption>
+    </figure>
+
+    <figure>
+        <a href="https://www.freecodecamp.org/learn" target="_blank">
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="sea">
+        </a>
+        <figcaption>descript</figcaption>
+    </figure>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 
+    VIEWPORT
+    Wajib untuk SEO mobile-friendly. Google memakai mobile-first 
+    indexing, jadi tanpa ini ranking bisa terpengaruh negatif.
+  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    TITLE TAG
+    Elemen SEO paling berpengaruh. Muncul di tab browser dan sebagai 
+    judul biru di hasil pencarian Google. Idealnya 50-60 karakter, 
+    mengandung keyword utama, dan unik tiap halaman.
+  -->
+    <title>Judul Halaman - Keyword Utama di Sini</title>
+
+    <!-- 
+    META DESCRIPTION
+    Teks ringkasan yang tampil di bawah title pada hasil pencarian 
+    (snippet). Tidak langsung pengaruh ke ranking, tapi sangat 
+    pengaruh ke Click-Through Rate (CTR). Idealnya 150-160 karakter.
+  -->
+    <meta name="description" content="Deskripsi singkat dan menarik tentang isi halaman, mengandung keyword relevan.">
+
+    <!-- 
+    META KEYWORDS
+    Google sudah tidak memakai ini sebagai faktor ranking sejak 2009. 
+    Boleh ditulis untuk jaga-jaga, tapi jangan diandalkan.
+  -->
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+
+    <!-- 
+    ROBOTS
+    Instruksi untuk crawler mesin pencari. "index" = boleh dimasukkan 
+    ke hasil pencarian, "follow" = boleh mengikuti link di halaman ini.
+    Pakai "noindex, nofollow" untuk halaman yang tidak mau muncul di Google.
+  -->
+    <meta name="robots" content="index, follow">
+
+    <!-- 
+    CANONICAL URL
+    Menentukan URL "resmi" dari halaman ini, mencegah masalah 
+    duplicate content jika halaman bisa diakses lewat beberapa URL.
+  -->
+    <link rel="canonical" href="https://www.contohsitus.com/halaman-ini">
+
+    <!-- 
+    OPEN GRAPH (OG) TAGS
+    Bukan untuk Google, tapi untuk preview saat link dibagikan ke 
+    Facebook, WhatsApp, LinkedIn, Discord, dll.
+  -->
+    <meta property="og:title" content="Judul untuk Preview Sosial Media">
+    <meta property="og:description" content="Deskripsi singkat untuk preview sosial media.">
+    <meta property="og:image" content="https://www.contohsitus.com/assets/preview.jpg">
+    <meta property="og:url" content="https://www.contohsitus.com/halaman-ini">
+    <meta property="og:type" content="website">
+
+    <!-- 
+    TWITTER CARD
+    Sama seperti Open Graph, tapi khusus preview di platform X (Twitter).
+  -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Judul untuk Twitter Card">
+    <meta name="twitter:description" content="Deskripsi singkat untuk Twitter Card.">
+    <meta name="twitter:image" content="https://www.contohsitus.com/assets/preview.jpg">
+
+    <!-- 
+    STRUCTURED DATA (JSON-LD / Schema.org)
+    Dibaca langsung oleh Google untuk memahami konteks konten secara 
+    pasti, sehingga bisa tampil sebagai Rich Result (rating, harga, 
+    breadcrumb, dll) di hasil pencarian.
+  -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Nama Halaman",
+    "description": "Deskripsi halaman untuk structured data."
+  }
+  </script>
+</head>
+
+<body>
+
+    <!-- 
+    SEMANTIC HTML: <header>
+    Tag semantik membantu Google & screen reader memahami struktur 
+    halaman. <header> = bagian kepala/pembuka halaman.
+  -->
+    <header>
+        <!-- 
+      HEADING HIERARCHY (H1)
+      Hanya boleh SATU <h1> per halaman, mengandung keyword utama. 
+      Jangan skip level heading (misal h1 langsung ke h4).
+    -->
+        <h1>Judul Utama Halaman</h1>
+    </header>
+
+    <!-- 
+    SEMANTIC HTML: <main>
+    Menandakan konten UTAMA halaman. Google memberi bobot lebih pada 
+    konten di dalam <main> dibanding <aside> atau <footer>.
+  -->
+    <main>
+        <!-- 
+      SEMANTIC HTML: <article>
+      Untuk konten yang berdiri sendiri (misal: postingan blog, 
+      produk, berita), lebih baik dari <div> biasa untuk SEO.
+    -->
+        <article>
+            <h2>Subjudul Konten</h2>
+            <p>Isi konten di sini.</p>
+        </article>
+    </main>
+
+    <!-- 
+    SEMANTIC HTML: <footer>
+    Bagian penutup halaman, biasanya berisi internal link yang 
+    membantu Google merayapi (crawl) situs lebih dalam.
+  -->
+    <footer>
+        <p>&copy; 2026 Nama Situs. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
