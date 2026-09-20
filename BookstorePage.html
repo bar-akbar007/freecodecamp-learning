@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>XYZ Bookstore</h1>
+    <p>Browse our collection of amazing books!</p>
+
+    <!-- 
+  CARD CONTAINER
+  Div ini berfungsi sebagai wadah/pembungkus utama untuk menampung 
+  semua kartu buku (card) yang ada di toko. Biasanya di CSS, div ini 
+  diberi style seperti display: flex atau display: grid agar kartu-kartu 
+  di dalamnya bisa tersusun rapi secara horizontal/berjajar, bukan 
+  menumpuk ke bawah satu-satu.
+-->
+    <div class="card-container">
+
+        <!-- 
+    CARD: SALLY'S SCIFI ADVENTURE
+    Div ini merepresentasikan satu unit produk/buku yang dijual, 
+    yaitu buku "Sally's SciFi Adventure". Id "sally-adventure-book" 
+    diberikan agar elemen ini bisa ditarget secara spesifik lewat 
+    JavaScript maupun CSS (misal untuk keperluan menambahkan ke 
+    keranjang belanja berdasarkan id buku tersebut).
+  -->
+        <div class="card" id="sally-adventure-book">
+            <h2>Sally's SciFi Adventure</h2>
+            <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>
+
+            <!-- 
+      BUTTON: BUY NOW (Sally's book)
+      Tombol ini berfungsi sebagai trigger/pemicu aksi pembelian 
+      untuk buku "Sally's SciFi Adventure" secara spesifik. Ketika 
+      diklik, biasanya akan dijalankan fungsi JavaScript (lewat event 
+      listener) yang menambahkan buku ini ke dalam keranjang belanja 
+      (cart), misalnya dengan menyimpan data buku ke dalam array/state 
+      atau localStorage.
+    -->
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <!-- 
+    CARD: DAVE'S COOKING ADVENTURE
+    Sama seperti card sebelumnya, div ini merepresentasikan satu unit 
+    produk/buku yang berbeda, yaitu "Dave's Cooking Adventure". Id 
+    "dave-cooking-book" memungkinkan elemen ini dibedakan secara unik 
+    dari card buku lainnya saat diproses lewat JavaScript.
+  -->
+        <div class="card" id="dave-cooking-book">
+            <h2>Dave's Cooking Adventure</h2>
+            <p>This is the story of Dave as he learns to cook everything from pancakes to pasta, one recipe at a time.
+            </p>
+
+            <!-- 
+      BUTTON: BUY NOW (Dave's book)
+      Sama fungsinya dengan tombol "Buy Now" di card Sally, hanya 
+      saja tombol ini spesifik untuk menambahkan buku "Dave's Cooking 
+      Adventure" ke keranjang belanja. Karena class-nya sama ("btn"), 
+      biasanya JavaScript akan menggunakan event delegation atau 
+      querySelectorAll untuk membedakan tombol mana yang diklik, 
+      misalnya dengan mengecek parent card / data attribute-nya.
+    -->
+            <button class="btn">Buy Now</button>
+        </div>
+
+    </div>
+
+    <p>Review your selections and continue to checkout.</p>
+
+    <!-- 
+  BUTTON CONTAINER
+  Div ini berfungsi sebagai wadah untuk mengelompokkan tombol-tombol 
+  aksi akhir (final actions) dalam alur belanja, yaitu tombol "View Cart" 
+  dan "Checkout". Pengelompokan ini memudahkan pengaturan tata letak 
+  (misalnya membuat kedua tombol sejajar/berdampingan lewat flexbox).
+-->
+    <div class="btn-container">
+
+        <!-- 
+    BUTTON: VIEW CART
+    Tombol ini berfungsi untuk menampilkan isi keranjang belanja 
+    kepada pengguna, biasanya memunculkan modal, halaman baru, atau 
+    section tersembunyi yang berisi daftar buku yang sudah ditambahkan 
+    beserta total harga. Tombol ini TIDAK melakukan proses pembayaran, 
+    hanya sekadar meninjau (review) pilihan.
+  -->
+        <button class="btn" id="view-cart-btn">View Cart</button>
+
+        <!-- 
+    BUTTON: CHECKOUT
+    Tombol ini berfungsi untuk melanjutkan proses transaksi menuju 
+    tahap pembayaran/checkout. Biasanya ketika diklik, pengguna akan 
+    diarahkan (redirect) ke halaman checkout baru, atau memicu fungsi 
+    yang memvalidasi keranjang belanja terlebih dahulu (misal: cek 
+    apakah keranjang kosong) sebelum melanjutkan ke proses selanjutnya.
+  -->
+        <button class="btn" id="checkout-btn">Checkout</button>
+
+    </div>
+</body>
+
+</html>
