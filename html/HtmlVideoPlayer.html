@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with the HTML Video Element</title>
+</head>
+
+<body>
+    <h1>Working with the HTML Video Element</h1>
+
+    <!-- 
+    ========================================================================
+    TAG <video>: Digunakan untuk menyematkan konten video di halaman web.
+    - width="640": Mengatur lebar video (dalam piksel).
+    - loop: Membuat video berputar otomatis dari awal setelah selesai.
+    - controls: Menampilkan tombol kontrol (play, pause, volume, dll).
+    - muted: Membisukan suara video secara default saat pertama kali dimuat.
+    - poster: Menampilkan gambar sampul sebelum video diputar.
+    ========================================================================
+  -->
+    <video width="640" loop controls muted poster="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg">
+        <!-- 
+      TAG <source> 1 (MP4):
+      - Fungsi: Menyediakan file video berformat MP4.
+      - Penjelasan: Format universal yang didukung oleh hampir semua browser modern (Chrome, Safari, Edge, Firefox).
+    -->
+        <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+            type="video/mp4">
+
+        <!-- 
+      TAG <source> 2 (WebM):
+      - Fungsi: Menyediakan file video berformat WebM.
+      - Penjelasan: Format video yang sangat ringan dan dioptimalkan untuk web, menghasilkan ukuran file yang lebih kecil.
+    -->
+        <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm" type="video/webm">
+
+        <!-- 
+      TAG <source> 3 (Ogg):
+      - Fungsi: Menyediakan file video berformat Ogg.
+      - Penjelasan: Format alternatif berbasis open-source untuk kompatibilitas tambahan pada browser tertentu.
+    -->
+        <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg" type="video/ogg">
+
+        <!-- 
+      TAG <source> 4 (MOV):
+      - Fungsi: Menyediakan file video berformat QuickTime.
+      - Penjelasan: Format video standar yang sering digunakan pada perangkat dan ekosistem Apple.
+    -->
+        <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.mov" type="video/quicktime">
+    </video>
+</body>
+
+</html>
