@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    ======================================================================
+    [BAGIAN METADATA & KONFIGURASI HALAMAN]
+    ======================================================================
+  -->
+  
+  <!-- <meta charset="UTF-8">: Menentukan pengodean karakter halaman web menjadi UTF-8. 
+       Ini memastikan semua karakter, simbol, dan emoji dapat ditampilkan dengan benar oleh browser. -->
+  <meta charset="UTF-8" />
+  
+  <!-- <meta name="viewport">: Mengontrol tata letak halaman pada perangkat seluler.
+       - width=device-width: Mengatur lebar halaman agar mengikuti lebar layar perangkat.
+       - initial-scale=1.0: Menetapkan tingkat zoom awal sebesar 100% saat halaman pertama kali dimuat. 
+         Sangat krusial untuk membuat desain yang responsif (Mobile-Friendly). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- <title>: Menentukan judul halaman yang akan muncul di tab browser pengguna dan hasil pencarian mesin pencari (SEO). -->
+  <title>HTML Audio and Video Lab</title>
+</head>
+<body>
+
+  <!-- 
+    ======================================================================
+    [BAGIAN KONTEN UTAMA HALAMAN]
+    ======================================================================
+  -->
+
+  <!-- <h1>: Elemen heading tingkat tertinggi (terpenting). 
+       Digunakan sebagai judul utama dari seluruh konten halaman web ini. Hanya boleh ada satu <h1> per halaman. -->
+  <h1>Membuat Audio dan Video Player</h1>
+
+  <!-- 
+    ----------------------------------------------------------------------
+    SEKSI 1: PEMUTAR VIDEO (VIDEO PLAYER)
+    ----------------------------------------------------------------------
+  -->
+  <!-- <section>: Elemen semantik untuk mengelompokkan konten yang saling berkaitan secara tematik. 
+       Di sini digunakan khusus untuk membungkus komponen Pemutar Video. -->
+  <section>
+    <!-- <h2>: Heading tingkat kedua. Berfungsi sebagai sub-judul untuk menjelaskan isi dari seksi video ini. -->
+    <h2>video</h2>
+    
+    <!-- <video>: Elemen HTML5 untuk memutar berkas video langsung di halaman web tanpa plugin tambahan.
+         - width="640": Mengunci lebar pemutar video sebesar 640 piksel agar tata letak tetap konsisten.
+         - controls: Atribut Boolean yang wajib ditambahkan agar browser memunculkan tombol UI bawaan 
+           (seperti Tombol Play/Pause, Volume, Timeline bar, dan Fullscreen). -->
+    <video width="640" controls>
+      <!-- <source>: Elemen bersarang di dalam <video> atau <audio> untuk menentukan file media yang akan diputar.
+           - src: Menyimpan tautan URL langsung (path) tempat file video berada.
+           - type: Memberitahu browser format video yang digunakan ("video/mp4") sebelum mendownloadnya, 
+             sehingga browser dapat langsung tahu apakah format ini didukung atau tidak. -->
+      <source src="https://freecodecamp.org" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- 
+    ----------------------------------------------------------------------
+    SEKSI 2: PEMUTAR AUDIO (AUDIO PLAYER)
+    ----------------------------------------------------------------------
+  -->
+  <!-- <section>: Mengelompokkan komponen pemutar musik/audio agar terpisah secara struktur dari seksi video di atas. -->
+  <section>
+    <!-- <h2>: Sub-judul seksi audio, digunakan untuk menampilkan informasi judul dari lagu yang diputar. -->
+    <h2>Judul Lagu</h2>
+    
+    <!-- <audio>: Elemen HTML5 untuk memutar berkas suara atau musik di halaman web.
+         - src: Tautan URL langsung menuju file audio berformat .mp3.
+         - controls: Menampilkan panel kontrol audio standar dari browser (Play, Pause, Volume, Durasi).
+         - loop: Atribut Boolean yang membuat audio otomatis berputar kembali dari awal secara terus-menerus 
+           (mengulang) setelah durasi lagu selesai habis. -->
+    <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/we-are-going-to-make-it.mp3" controls loop></audio>
+  </section> 
+
+</body>
+</html>
