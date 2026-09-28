@@ -1,75 +1,88 @@
-# 💻 freeCodeCamp Learning Journey
+# 📚 freeCodeCamp Learning
 
-![HTML5](https://shields.io)
-![CSS3](https://shields.io)
-![JavaScript](https://shields.io)
-![Status](https://shields.io)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Status](https://img.shields.io/badge/Status-In_Progress-brightgreen?style=for-the-badge)
 
-Repositori ini berisi seluruh kode latihan, proyek, dan catatan pembelajaran yang saya selesaikan selama mengikuti kurikulum di **[freeCodeCamp](https://www.freecodecamp.org/)**.
+Repositori ini berisi kode latihan, proyek kecil, dan catatan belajar dari kurikulum **[freeCodeCamp](https://www.freecodecamp.org/)**. Saat ini fokusnya masih HTML dan CSS.
 
 ---
 
-## 🎯 Tujuan Repositori
+## 🎯 Tujuan
 
-- **Dokumentasi:** Menyimpan rekam jejak progres belajar *web development* harian.
-- **Portofolio:** Menampilkan proyek-proyek praktis yang telah dibangun.
-- **Referensi Kode:** Menjadi catatan pribadi untuk melihat kembali sintaks dan struktur kode yang pernah dipelajari.
+- **Dokumentasi:** mencatat progres belajar web development.
+- **Portofolio:** menyimpan proyek praktik yang sudah dibuat.
+- **Referensi:** tempat buka lagi sintaks dan struktur kode yang pernah dipelajari.
 
 ---
 
 ## 📂 Struktur Repositori
 
 ```text
-├── css/
-└── html/
-    ├── attributes.html
-    ├── boilerplate.html
-    ├── BookstorePage.html
-    ├── BuildHeartSVG.html
-    ├── BuildTravelAgency.html
-    ├── CatPhotoApp.html
-    ├── DivElement.html
-    ├── EntityHtml.html
-    ├── HtmlAudioVideoPlayer.html
-    ├── HtmlMusicPlay.html
-    ├── HtmlVideoPlayer.html
-    ├── iDelement.html
-    ├── iFrame.txt
-    ├── LicenseImage.txt
-    ├── link.html
-    ├── MakeRecipeLandingPage.html
-    ├── OptimizeMediaAssets.txt
-    ├── Script.html
-    ├── SEO.html
-    ├── SVG.txt
-    ├── utf-8.html
-    └── README.md
+freecodecamp-learning/
+├── css/          # latihan CSS
+├── html/         # latihan HTML, proyek, dan catatan
+└── README.md
 ```
 
 ---
 
-## 📝 Daftar Isi & Deskripsi Latihan
+## 🧩 Isi Folder `html/`
 
-| Nama File / Folder | Deskripsi Fungsi & Pembelajaran |
-| :--- | :--- |
-| `attributes.html` | Latihan penerapan berbagai atribut pada elemen HTML. |
-| `boilerplate.html` | Struktur dasar (*template standard*) dokumen HTML5. |
-| `BookstorePage.html` | Latihan pembuatan tata letak halaman toko buku online. |
-| `BuildHeartSVG.html` | Implementasi pembuatan grafik vektor ikon hati menggunakan tag `<svg>`. |
-| `BuildTravelAgency.html` | Praktik pembuatan halaman landing page untuk agen perjalanan. |
-| `CatPhotoApp.html` | Proyek aplikasi foto kucing (latihan dasar HTML dari freeCodeCamp). |
-| `DivElement.html` | Penggunaan elemen pembungkus `<div>` untuk pengelompokan konten. |
-| `EntityHtml.html` | Penerapan karakter khusus HTML (*HTML Entities*) seperti `&amp;`, `&lt;`, dll. |
-| `HtmlAudioVideoPlayer.html` | Integrasi pemutar media audio dan video gabungan dalam satu halaman. |
-| `HtmlMusicPlay.html` | Eksperimen pembuatan halaman pemutar musik sederhana. |
-| `HtmlVideoPlayer.html` | Penggunaan tag `<video>` beserta atribut kontrolnya. |
-| `iDelement.html` | Latihan penggunaan atribut `id` untuk spesifikasi elemen unik. |
-| `iFrame.txt` / `iFrame.html` | Catatan dan implementasi penyematan halaman luar menggunakan `<iframe>`. |
-| `LicenseImage.txt` | Catatan informasi lisensi gambar yang digunakan dalam proyek. |
-| `link.html` | Praktik membuat navigasi dan hyperlink menggunakan tag `<a>`. |
-| `MakeRecipeLandingPage.html` | Proyek membuat halaman resep makanan dengan struktur HTML teratur. |
-| `OptimizeMediaAssets.txt` | Catatan tips optimasi ukuran dan format aset media untuk web. |
-| `Script.html` | Uji coba penyematan kode JavaScript eksternal maupun internal ke HTML. |
-| `SEO.html` | Penerapan tag meta dasar untuk optimasi mesin pencari (SEO). |
-| `SVG.txt` | Catatan dasar mengenai teori dan koordinat pada grafik SVG. |
-| `utf-8.html` | Eksperimen pembuktian pentingnya encoding karakter `charset="UTF-8"`. |
+### Proyek
+
+| File | Deskripsi |
+| --- | --- |
+| `CatPhotoApp.html` | Cat Photo App, proyek dasar HTML |
+| `BookstorePage.html` | Halaman toko buku |
+| `BuildHeartSVG.html` | Membuat gambar hati dengan SVG |
+| `BuildTravelAgency.html` | Halaman agen perjalanan |
+| `MakeRecipeLandingPage.html` | Landing page resep |
+
+### Latihan konsep
+
+| File | Topik |
+| --- | --- |
+| `boilerplate.html` | Struktur dasar dokumen HTML |
+| `utf-8.html` | Encoding karakter |
+| `DivElement.html`, `IDelement.html` | Elemen `div` dan atribut `id` |
+| `atributes.html`, `link.html` | Atribut dan tautan |
+| `EntityHtml.html` | HTML entity |
+| `HtmlAudioVideoPlayer.html`, `HtmlMusicPlay.html`, `HtmlVideoPlayer.html` | Audio dan video di HTML |
+| `Script.html` | Menyisipkan JavaScript |
+| `SEO.html` | Dasar SEO |
+
+### Catatan (`.txt`)
+
+- `Iframe.txt`: catatan tentang `iframe`
+- `LicenseImage.txt`: lisensi gambar
+- `OptimizeMediaAssets.txt`: optimasi aset media
+- `SVG.txt`: catatan tentang SVG
+
+---
+
+## 🚀 Cara Menjalankan
+
+1. Clone repositori:
+
+```bash
+   git clone https://github.com/bar-akbar007/freecodecamp-learning.git
+```
+
+2. Buka foldernya di VS Code.
+3. Klik kanan file `.html`, lalu pilih **Open with Live Server**. Atau buka langsung di browser.
+
+---
+
+## 🗺️ Rencana Berikutnya
+
+- [ ] Lengkapi latihan CSS
+- [ ] Tambah proyek Responsive Web Design
+- [ ] Mulai materi JavaScript
+
+---
+
+## 👤 Penulis
+
+**Muhammad Akbar**
+GitHub: [@bar-akbar007](https://github.com/bar-akbar007)
