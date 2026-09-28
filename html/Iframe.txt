@@ -17,3 +17,13 @@ Ada beberapa elemen lain yang diganti, seperti video, dan embed. Dan beberapa el
 <input type="image" alt="Descriptive text goes here" src="example-img-url">
 Jenis ini dari input dianggap sebagai elemen yang diganti, tetapi lainnya input jenis seperti text, atau email tidak diganti elemen.
 
+Dalam pelajaran sebelumnya, Anda pertama kali diperkenalkan dengan iframe element. Dalam pelajaran ini, Anda akan belajar lebih banyak tentang cara bekerja dengan iframe element. Elemen ini singkatan dari inline frame. Ini adalah elemen sebaris yang digunakan untuk menyematkan konten HTML lain langsung di dalam halaman HTML. Konten HTML itu bisa berupa video, peta, elemen HTML lain, atau bahkan halaman web lainnya.
+
+Berikut adalah contoh penyematan kursus freeCodeCamp yang populer dari YouTube. Untuk melihat video yang berbeda, aktifkan editor interaktif dan ubah src nilai untuk video pilihan Anda.
+
+Dalam pelajaran sebelumnya, Anda pertama kali diperkenalkan dengan iframe element. Dalam pelajaran ini, Anda akan belajar lebih banyak tentang cara bekerja dengan iframe element. Elemen ini singkatan dari inline frame. Ini adalah elemen sebaris yang digunakan untuk menyematkan konten HTML lain langsung di dalam halaman HTML. Konten HTML itu bisa berupa video, peta, elemen HTML lain, atau bahkan halaman web lainnya.
+
+Berikut adalah contoh penyematan kursus freeCodeCamp yang populer dari YouTube. Untuk melihat video yang berbeda, aktifkan editor interaktif dan ubah src nilai untuk video pilihan Anda.
+
+Jika Anda ingin menyematkan HTML langsung di dalamnya iframe elemen, Anda harus menggunakan srcdoc atribut bukannya src.
+
