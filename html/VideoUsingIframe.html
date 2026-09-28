@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Videos in an iframe</title>
+  </head>
+  <body>
+    <h1>iframe Video Display</h1>
+    <iframe
+      <!-- Menentukan lebar frame video dalam satuan piksel -->
+      width="560"
+      
+      <!-- Menentukan tinggi frame video dalam satuan piksel -->
+      height="315"
+      
+      <!-- Sumber URL video yang akan dimuat (format embed YouTube) -->
+      src="https://www.youtube.com/embed/I0_951_MPE0"
+      
+      <!-- Memberikan izin akses fitur perangkat: 
+           - accelerometer: deteksi orientasi layar (potret/lanskap)
+           - autoplay: memutar video otomatis jika diizinkan browser
+           - clipboard-write: menyalin tautan video ke clipboard
+           - encrypted-media: memutar konten video yang dilindungi hak cipta (DRM)
+           - gyroscope: mendukung interaksi video 360 derajat berbasis sensor
+           - web-share: mengaktifkan fitur berbagi bawaan browser/sistem operasi -->
+      allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+      
+      <!-- Kebijakan keamanan data: mengirimkan data asal situs (domain) hanya jika 
+           keamanannya setara (dari HTTPS ke HTTPS) untuk melindungi privasi pengguna -->
+      referrerpolicy="strict-origin-when-cross-origin"
+      
+      <!-- Mengizinkan pengguna untuk memperbesar video menjadi layar penuh (fullscreen) -->
+      allowfullscreen
+    >
+    </iframe>
+  </body>
+</html>
