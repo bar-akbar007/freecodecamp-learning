@@ -1,0 +1,19 @@
+Apa Itu Elemen yang Diganti, dan Apa Beberapa Contohnya?
+Elemen yang diganti adalah elemen yang isinya ditentukan oleh sumber daya eksternal, bukan oleh CSS itu sendiri. CSS, atau Cascading Style Sheets, digunakan untuk menambahkan gaya ke halaman web. Contoh umum elemen yang diganti termasuk elemen gambar, iframe, dan video.
+
+Dengan elemen yang diganti, Anda dapat mengontrol posisi atau tata letak elemen. Tetapi CSS Anda tidak dapat secara langsung memodifikasi konten elemen itu. Ini mungkin lebih mudah dijelaskan dengan beberapa contoh. Pertimbangkan elemen gambar, yang menyematkan gambar di halaman web Anda:
+
+<img src="example-img-url" alt="Descriptive text goes here">
+Elemen itu sendiri diganti dengan objek eksternal: gambar. CSS Anda dapat mengontrol hal-hal seperti pemosisian gambar, atau menerapkan filter ke dalamnya, tetapi Anda tidak dapat benar-benar memodifikasi gambar itu sendiri. Contoh yang lebih kuat mungkin adalah iframe elemen, yang menyematkan situs eksternal di halaman web Anda.
+
+Berikut adalah contoh penggunaan iframe elemen untuk video YouTube populer di saluran freeCodeCamp. Jika Anda ingin melihat video berbeda di jendela pratinjau, ubah nilai src atribut ke video pilihan Anda. Untuk melihat pratinjaunya, Anda perlu mengaktifkan editor interaktif.
+
+NOTE: Jangan khawatir tentang atribut ekstra yang disebutkan dalam contoh interaktif seperti referrerpolicy and allowfullscreen. Anda akan belajar lebih banyak tentang bekerja dengan iframe elemen dalam lokakarya mendatang.
+
+Elemen itu sendiri diganti dengan objek eksternal: situs. CSS Anda dapat mengubah posisi situs yang disematkan, namun Anda tidak dapat mengubah konten situs. Untuk menyelam lebih jauh, jika situs tertanam memiliki h1 elemen, CSS Anda tidak akan bisa menatanya h1 element. Anda tidak dapat mengubah ukuran, warna font, dan sebagainya.
+
+Ada beberapa elemen lain yang diganti, seperti video, dan embed. Dan beberapa elemen berperilaku sebagai elemen yang diganti dalam keadaan tertentu. Berikut contoh dari sebuah input elemen dengan type atribut diatur ke image:
+
+<input type="image" alt="Descriptive text goes here" src="example-img-url">
+Jenis ini dari input dianggap sebagai elemen yang diganti, tetapi lainnya input jenis seperti text, atau email tidak diganti elemen.
+
