@@ -1,9 +1,9 @@
-# 📚 freeCodeCamp Learning Journey
+# 💻 freeCodeCamp Learning Journey
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Status](https://img.shields.io/badge/Status-In_Progress-brightgreen?style=for-the-badge)
+![HTML5](https://shields.io)
+![CSS3](https://shields.io)
+![JavaScript](https://shields.io)
+![Status](https://shields.io)
 
 Repositori ini berisi seluruh kode latihan, proyek, dan catatan pembelajaran yang saya selesaikan selama mengikuti kurikulum di **[freeCodeCamp](https://www.freecodecamp.org/)**.
 
@@ -20,12 +20,56 @@ Repositori ini berisi seluruh kode latihan, proyek, dan catatan pembelajaran yan
 ## 📂 Struktur Repositori
 
 ```text
-.
-├── 01-responsive-web-design/
-│   ├── 01-cat-photo-app/
-│   ├── 02-cafe-menu/
-│   ├── 03-nutrition-label/
-│   └── 04-personal-portfolio/
-├── 02-javascript-algorithms/
-│   └── ...
-└── README.md
+├── css/
+└── html/
+    ├── attributes.html
+    ├── boilerplate.html
+    ├── BookstorePage.html
+    ├── BuildHeartSVG.html
+    ├── BuildTravelAgency.html
+    ├── CatPhotoApp.html
+    ├── DivElement.html
+    ├── EntityHtml.html
+    ├── HtmlAudioVideoPlayer.html
+    ├── HtmlMusicPlay.html
+    ├── HtmlVideoPlayer.html
+    ├── iDelement.html
+    ├── iFrame.txt
+    ├── LicenseImage.txt
+    ├── link.html
+    ├── MakeRecipeLandingPage.html
+    ├── OptimizeMediaAssets.txt
+    ├── Script.html
+    ├── SEO.html
+    ├── SVG.txt
+    ├── utf-8.html
+    └── README.md
+```
+
+---
+
+## 📝 Daftar Isi & Deskripsi Latihan
+
+| Nama File / Folder | Deskripsi Fungsi & Pembelajaran |
+| :--- | :--- |
+| `attributes.html` | Latihan penerapan berbagai atribut pada elemen HTML. |
+| `boilerplate.html` | Struktur dasar (*template standard*) dokumen HTML5. |
+| `BookstorePage.html` | Latihan pembuatan tata letak halaman toko buku online. |
+| `BuildHeartSVG.html` | Implementasi pembuatan grafik vektor ikon hati menggunakan tag `<svg>`. |
+| `BuildTravelAgency.html` | Praktik pembuatan halaman landing page untuk agen perjalanan. |
+| `CatPhotoApp.html` | Proyek aplikasi foto kucing (latihan dasar HTML dari freeCodeCamp). |
+| `DivElement.html` | Penggunaan elemen pembungkus `<div>` untuk pengelompokan konten. |
+| `EntityHtml.html` | Penerapan karakter khusus HTML (*HTML Entities*) seperti `&amp;`, `&lt;`, dll. |
+| `HtmlAudioVideoPlayer.html` | Integrasi pemutar media audio dan video gabungan dalam satu halaman. |
+| `HtmlMusicPlay.html` | Eksperimen pembuatan halaman pemutar musik sederhana. |
+| `HtmlVideoPlayer.html` | Penggunaan tag `<video>` beserta atribut kontrolnya. |
+| `iDelement.html` | Latihan penggunaan atribut `id` untuk spesifikasi elemen unik. |
+| `iFrame.txt` / `iFrame.html` | Catatan dan implementasi penyematan halaman luar menggunakan `<iframe>`. |
+| `LicenseImage.txt` | Catatan informasi lisensi gambar yang digunakan dalam proyek. |
+| `link.html` | Praktik membuat navigasi dan hyperlink menggunakan tag `<a>`. |
+| `MakeRecipeLandingPage.html` | Proyek membuat halaman resep makanan dengan struktur HTML teratur. |
+| `OptimizeMediaAssets.txt` | Catatan tips optimasi ukuran dan format aset media untuk web. |
+| `Script.html` | Uji coba penyematan kode JavaScript eksternal maupun internal ke HTML. |
+| `SEO.html` | Penerapan tag meta dasar untuk optimasi mesin pencari (SEO). |
+| `SVG.txt` | Catatan dasar mengenai teori dan koordinat pada grafik SVG. |
+| `utf-8.html` | Eksperimen pembuktian pentingnya encoding karakter `charset="UTF-8"`. |
