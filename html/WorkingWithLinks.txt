@@ -1,0 +1,63 @@
+
+Anda mungkin telah melihat tautan di halaman web menjadi ungu setelah Anda mengkliknya. Hal ini karena keadaan tautan telah berubah, sehingga gaya yang berbeda diterapkan. Ada lima negara bagian berbeda yang dapat dihubungkan dengan tautan.
+
+Link States
+The :link State
+Yang pertama adalah keadaan default, yaitu :link. Status ini mewakili tautan yang belum dikunjungi, diklik, atau berinteraksi dengan pengguna. Anda dapat menganggap keadaan ini sebagai menyediakan gaya dasar untuk semua tautan di halaman Anda. Negara-negara bagian lain membangun di atasnya.
+
+Aktifkan editor interaktif dan lihat tautan di jendela pratinjau. Ini harus menjadi warna default biru yang mewakili keadaan default. Jika Anda mengkliknya, maka itu akan berubah menjadi ungu.
+
+
+1
+
+Buka Sandbox
+The :visited State
+Keadaan kedua adalah :visited, yang berlaku ketika pengguna telah mengunjungi halaman yang ditautkan. Secara default, ini mengubah tautan menjadi ungu - tetapi Anda dapat memanfaatkan CSS untuk memberikan indikasi visual yang berbeda kepada pengguna. Hal ini berguna untuk memberi tahu seseorang bahwa mereka telah membaca sebagian dokumentasi Anda. Atau, bahwa situs adalah salah satu yang dapat mereka percaya karena mereka telah menggunakannya sebelumnya.
+
+Klik pada tautan di jendela pratinjau dan Anda akan melihat bahwa tautan yang dikunjungi berubah menjadi warna coklat. Untuk melihat pratinjaunya, Anda perlu mengaktifkan editor interaktif.
+
+NOTE: Beberapa CSS telah disediakan untuk contoh interaktif ini sehingga Anda dapat melihat perubahan dalam gaya tautan. Jangan khawatir tentang mencoba untuk memahami kode CSS karena Anda akan belajar apa artinya semua itu dalam modul masa depan.
+
+index.html
+styles.css
+
+1234567
+
+Buka Sandbox
+The :hover State
+Negara bagian ketiga adalah :hover. Status ini berlaku ketika pengguna mengarahkan kursornya ke tautan. Keadaan ini berguna untuk memberikan perhatian ekstra pada suatu tautan, untuk memastikan pengguna benar-benar bermaksud mengkliknya.
+
+Aktifkan editor interaktif dan coba arahkan mouse Anda ke tautan. Anda akan melihat warnanya berubah menjadi merah.
+
+index.html
+styles.css
+
+1234567
+
+Buka Sandbox
+The :focus State
+Maka kita punya :focus. Keadaan ini berlaku ketika kita fokus pada sebuah link.
+
+Klik pada bagian mana pun dari spasi di jendela pratinjau lalu tekan Tab pada keyboard Anda. Anda harus melihat perubahan tautan menjadi hijau. Untuk melihat pratinjaunya, Anda perlu mengaktifkan editor interaktif.
+
+index.html
+styles.css
+
+1234567
+
+Buka Sandbox
+The :active State
+Dan akhirnya, kita punya :active. Status ini berlaku untuk tautan yang sedang diaktifkan oleh pengguna. Ini biasanya berarti mengklik tautan dengan tombol mouse utama dengan mengklik kiri, dalam banyak kasus. Keadaan ini dapat membantu untuk menunjukkan kepada pengguna bahwa elemen yang mereka klik bersifat interaktif.
+
+Aktifkan editor interaktif dan klik tautannya. Anda harus melihat tautan berubah menjadi hitam. Ini terjadi cukup cepat sehingga Anda mungkin perlu mengkliknya beberapa kali untuk melihat perubahan warna.
+
+index.html
+styles.css
+
+1234567
+
+Buka Sandbox
+Urutan Styling
+Ketika Anda menggunakan negara-negara ini untuk gaya link Anda, ada urutan tertentu yang Anda butuhkan untuk menulis CSS Anda di: link, visited, hover, focus, kemudian active.
+
+Anda sekarang harus tahu cara memberikan tautan di halaman Anda bakat pribadi Anda sendiri, sambil tetap memberikan informasi penting yang dibutuhkan pengguna tentang keadaan setiap tautan.
