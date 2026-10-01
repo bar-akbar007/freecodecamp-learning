@@ -1,0 +1,15 @@
+HTML Presentasional (Sudah Ketinggalan Zaman / Deprecated):
+
+Berfokus pada tampilan visual atau gaya konten langsung di dalam HTML.
+
+Contoh elemen: <font>, <center>, dan <big>.
+
+Mengapa harus dihindari? Keterbatasan fungsional, buruk untuk aksesibilitas (screen reader), dan membuat kode sulit dipelihara. Saat ini, semua urusan gaya (warna, ukuran, posisi) wajib diatur menggunakan CSS.
+
+HTML Semantik (Standar Modern):
+
+Berfokus pada makna dan struktur konten, sehingga mudah dibaca, dipahami, dan dipelihara oleh pengembang maupun mesin.
+
+Contoh elemen: <header>, <nav>, <section>, <article>, dan <figure>.
+
+Keunggulan: Sangat membantu optimasi mesin pencari (SEO) serta meningkatkan aksesibilitas bagi pengguna yang mengandalkan pembaca layar.
