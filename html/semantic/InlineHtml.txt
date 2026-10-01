@@ -1,0 +1,37 @@
+Poin-Poin Penting
+1. <blockquote>
+Digunakan untuk kutipan panjang dari sumber lain.
+Biasanya berupa satu atau beberapa paragraf.
+Bisa menggunakan atribut cite untuk menentukan URL sumber.
+Contoh:
+<blockquote cite="https://example.com">
+  Ini adalah kutipan panjang dari sumber lain.
+</blockquote>
+2. <q>
+Digunakan untuk kutipan pendek/inline.
+Kutipan menjadi bagian dari paragraf.
+Browser biasanya otomatis menambahkan tanda kutip "...".
+Bisa menggunakan atribut cite.
+<p>
+  Dia berkata <q>Belajar coding itu menyenangkan.</q>
+</p>
+3. <cite>
+Digunakan untuk menunjukkan judul karya yang dirujuk.
+Bisa digunakan untuk buku, artikel, lagu, film, website, atau penelitian.
+Berbeda dengan atribut cite.
+<p>
+  Saya membaca <cite>How to Learn to Code and Get a Developer Job</cite>.
+</p>
+4. Atribut cite
+Digunakan untuk menentukan URL sumber kutipan.
+Bisa digunakan pada <blockquote> dan <q>.
+Informasinya terutama berguna untuk browser, screen reader, dan mesin pencari.
+<blockquote cite="https://example.com">
+  Kutipan dari sumber lain.
+</blockquote>
+5. Perbedaan utama
+Elemen	Fungsi
+<blockquote>	Kutipan panjang
+<q>	Kutipan pendek/inline
+<cite>	Menandai judul karya
+cite=""	Menentukan URL sumber kutipan
