@@ -1,0 +1,19 @@
+Elemen <i> (Teks Idiomatik / Idiomatic Text):
+
+Fungsi Semantik: Digunakan untuk menunjukkan teks yang berbeda atau dipisahkan dari teks sekitarnya karena suatu alasan, seperti istilah teknis, nama spesies taksonomi, pikiran/suara hati, atau frasa dari bahasa asing.
+
+Penting: Elemen <i> tidak memberikan arti bahwa teks tersebut "penting", hanya saja teks tersebut "berbeda karakternya".
+
+Contoh: <p>Tiramisu yang kita makan ini sangat <i>delizioso</i>!</p> (Menandakan kata dari bahasa Italia).
+
+Elemen <em> (Penekanan / Emphasis):
+
+Fungsi Semantik: Digunakan untuk memberikan penekanan (stres verbal) pada teks, yang dapat mengubah makna dari sebuah kalimat jika dibaca keras.
+
+Penting: Pembaca layar (screen reader) biasanya akan memberikan intonasi yang berbeda saat membacakan teks di dalam elemen <em>, karena elemen ini menandakan sesuatu yang penting untuk ditekankan.
+
+Contoh: <p>Saya <em>tidak</em> mengambil buku itu!</p> (Menekankan bahwa bukan 'saya' yang melakukannya).
+
+Aturan Dasar Penggunaan CSS:
+
+Jika Anda hanya ingin membuat teks terlihat miring demi keindahan visual/desain, tanpa ada makna penekanan khusus (<em>) atau perbedaan gaya bahasa (<i>), maka jangan gunakan HTML. Gunakanlah CSS (font-style: italic;).

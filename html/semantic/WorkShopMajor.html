@@ -1,0 +1,399 @@
+```html
+<!DOCTYPE html>
+<!--
+  <!DOCTYPE html> digunakan untuk mendeklarasikan bahwa dokumen ini
+  menggunakan standar HTML5.
+
+  Deklarasi ini bukan merupakan elemen HTML biasa, tetapi instruksi
+  kepada browser agar browser menggunakan mode standar HTML5 ketika
+  memproses dan menampilkan halaman.
+
+  Penulisan <!DOCTYPE html> harus berada di bagian paling atas dokumen,
+  sebelum tag <html>.
+-->
+
+
+<html lang="en">
+<!--
+  <html> merupakan root element atau elemen utama dari seluruh dokumen HTML.
+
+  Semua elemen HTML lainnya, seperti <head> dan <body>, berada di dalam
+  elemen <html>.
+
+  Atribut:
+  - lang="en"
+
+  Atribut lang digunakan untuk memberi tahu browser, screen reader,
+  mesin pencari, dan teknologi pendukung lainnya mengenai bahasa utama
+  yang digunakan dalam halaman.
+
+  Nilai "en" berarti English (Bahasa Inggris).
+
+  Contoh nilai lainnya:
+  - lang="id" untuk Bahasa Indonesia
+  - lang="ja" untuk Bahasa Jepang
+  - lang="fr" untuk Bahasa Prancis
+-->
+
+
+  <head>
+  <!--
+    <head> berisi metadata atau informasi mengenai dokumen HTML.
+
+    Isi di dalam <head> pada umumnya tidak ditampilkan sebagai konten
+    utama di halaman web.
+
+    Bagian ini biasanya digunakan untuk:
+    - menentukan encoding karakter
+    - menentukan judul halaman
+    - mengatur responsive viewport
+    - menghubungkan file CSS
+    - menghubungkan file JavaScript
+    - menambahkan favicon
+    - metadata untuk SEO
+  -->
+
+
+    <meta charset="UTF-8">
+    <!--
+      <meta charset="UTF-8"> digunakan untuk menentukan character encoding
+      yang digunakan oleh dokumen.
+
+      UTF-8 merupakan encoding yang mampu mendukung banyak sekali karakter,
+      termasuk:
+      - huruf alfabet
+      - angka
+      - simbol
+      - karakter dari berbagai bahasa
+      - sebagian besar karakter Unicode
+
+      Dengan menggunakan UTF-8, browser dapat membaca dan menampilkan
+      karakter dengan benar.
+
+      Contohnya, karakter seperti:
+      ©, €, é, 日本語, العربية
+
+      dapat ditampilkan dengan benar.
+
+      Tag <meta> bersifat void element, sehingga tidak memiliki closing tag.
+      Oleh karena itu tidak ditulis:
+      <meta charset="UTF-8"></meta>
+    -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+      Meta viewport digunakan untuk mengatur bagaimana halaman web
+      ditampilkan pada perangkat dengan ukuran layar yang berbeda,
+      terutama smartphone dan tablet.
+
+      Bagian:
+      - name="viewport"
+
+        Menentukan bahwa metadata ini berkaitan dengan viewport,
+        yaitu area halaman web yang terlihat oleh pengguna.
+
+      - width=device-width
+
+        Memberitahu browser agar lebar viewport mengikuti lebar
+        layar perangkat.
+
+        Tanpa pengaturan ini, halaman web desktop dapat terlihat
+        terlalu kecil ketika dibuka pada smartphone.
+
+      - initial-scale=1.0
+
+        Menentukan tingkat zoom awal halaman menjadi 100%.
+
+      Meta viewport merupakan bagian penting dalam pembuatan
+      responsive web design.
+    -->
+
+
+    <title>List of Browsers and Descriptions</title>
+    <!--
+      <title> digunakan untuk menentukan judul dokumen HTML.
+
+      Judul ini biasanya ditampilkan:
+      - pada tab browser
+      - pada bookmark
+      - pada history browser
+      - pada beberapa bagian hasil pencarian
+
+      <title> berbeda dengan <h1>.
+
+      <title>:
+      Digunakan sebagai judul dokumen/halaman pada browser.
+
+      <h1>:
+      Digunakan sebagai heading utama yang terlihat langsung
+      di dalam halaman web.
+
+      Contoh:
+      <title>List of Browsers and Descriptions</title>
+
+      akan muncul pada tab browser, sedangkan <h1> akan muncul
+      sebagai teks heading di dalam halaman.
+    -->
+
+  </head>
+  <!--
+    Penutup dari elemen <head>.
+
+    Setelah bagian ini, kita masuk ke bagian <body> yang berisi
+    konten utama halaman yang dapat dilihat oleh pengguna.
+  -->
+
+
+  <body>
+  <!--
+    <body> berisi seluruh konten utama yang akan ditampilkan
+    oleh browser kepada pengguna.
+
+    Contohnya:
+    - heading
+    - paragraf
+    - gambar
+    - link
+    - tabel
+    - form
+    - list
+    - video
+    dan elemen lainnya.
+  -->
+
+
+    <h1>List of Major Web Browsers</h1>
+    <!--
+      <h1> merupakan heading level 1 dan biasanya digunakan sebagai
+      judul utama dari sebuah halaman.
+
+      HTML menyediakan heading dari <h1> sampai <h6>.
+
+      Urutannya:
+      <h1> = heading paling utama
+      <h2> = subheading
+      <h3> = sub-subheading
+      ...
+      <h6> = heading dengan level paling rendah
+
+      <h1> sebaiknya digunakan untuk topik utama halaman.
+
+      Pada halaman ini, <h1> menjelaskan bahwa isi halaman adalah
+      daftar browser web utama.
+
+      Heading juga penting untuk:
+      - struktur dokumen
+      - accessibility
+      - screen reader
+      - pemahaman struktur halaman oleh search engine
+    -->
+
+
+    <dl>
+    <!--
+      <dl> merupakan singkatan dari Description List.
+
+      Description List digunakan ketika kita memiliki sekumpulan
+      istilah yang masing-masing memiliki penjelasan atau deskripsi.
+
+      Struktur dasarnya:
+
+      <dl>
+        <dt>Istilah</dt>
+        <dd>Deskripsi istilah</dd>
+      </dl>
+
+      Dalam contoh ini, <dl> digunakan untuk membuat daftar
+      web browser beserta deskripsinya.
+
+      Berbeda dengan:
+      - <ul> untuk unordered list
+      - <ol> untuk ordered list
+
+      <dl> digunakan ketika hubungan antara item dan penjelasannya
+      lebih penting daripada urutan itemnya.
+    -->
+
+
+      <dt>Google Chrome</dt>
+      <!--
+        <dt> merupakan singkatan dari Description Term.
+
+        Tag ini digunakan untuk menentukan istilah, nama, atau item
+        yang akan diberikan deskripsi.
+
+        Pada bagian ini:
+        Google Chrome
+
+        merupakan istilah yang akan dijelaskan oleh elemen <dd>
+        setelahnya.
+
+        Hubungan antara <dt> dan <dd> dapat dianggap seperti:
+
+        <dt> = "Apa yang sedang dijelaskan?"
+        <dd> = "Apa penjelasannya?"
+
+        Satu <dt> dapat memiliki satu atau beberapa <dd>
+        jika sebuah istilah membutuhkan beberapa penjelasan.
+      -->
+
+
+      <dd>
+        This is a free web browser developed by Google and first released in 2008.
+      </dd>
+      <!--
+        <dd> merupakan singkatan dari Description Details.
+
+        Elemen ini berisi deskripsi atau penjelasan dari <dt>
+        yang berada sebelumnya.
+
+        Dalam contoh ini, <dd> menjelaskan tentang Google Chrome.
+
+        Hubungan strukturnya adalah:
+
+        <dt>Google Chrome</dt>
+        <dd>Deskripsi Google Chrome</dd>
+
+        Browser akan memahami bahwa teks di dalam <dd>
+        merupakan penjelasan yang berkaitan dengan <dt>
+        sebelumnya.
+      -->
+
+
+      <dt>Firefox</dt>
+      <!--
+        <dt> berikutnya digunakan untuk menentukan istilah kedua,
+        yaitu Firefox.
+
+        Karena berada di dalam <dl>, elemen ini menjadi bagian
+        dari Description List.
+      -->
+
+
+      <dd>
+        This is a free web browser developed by the Mozilla Corporation and first created in 2004.
+      </dd>
+      <!--
+        <dd> ini memberikan penjelasan yang berhubungan dengan
+        <dt>Firefox> di atasnya.
+
+        Secara struktur:
+
+        <dt>Firefox</dt>
+        <dd>Penjelasan Firefox</dd>
+      -->
+
+
+      <dt>Safari</dt>
+      <!--
+        <dt> digunakan untuk mendefinisikan istilah berikutnya,
+        yaitu Safari.
+      -->
+
+
+      <dd>
+        This browser was developed by Apple and is the default browser for iPhone, iPad and Mac devices.
+      </dd>
+      <!--
+        <dd> berisi informasi atau deskripsi yang berkaitan
+        dengan istilah Safari.
+      -->
+
+
+      <dt>Brave</dt>
+      <!--
+        <dt> mendefinisikan istilah berikutnya dalam Description List,
+        yaitu Brave.
+      -->
+
+
+      <dd>
+        This is a free web browser first released in 2016 that is based on the Chromium web browser.
+      </dd>
+      <!--
+        <dd> memberikan informasi tambahan yang menjelaskan
+        browser Brave.
+      -->
+
+
+      <dt>Arc</dt>
+      <!--
+        <dt> digunakan untuk mendefinisikan istilah terakhir,
+        yaitu Arc.
+      -->
+
+
+      <dd>
+        This is a free Chromium-based web browser first released in 2023 by The Browser Company.
+      </dd>
+      <!--
+        <dd> berisi deskripsi mengenai Arc dan menjelaskan
+        informasi yang berkaitan dengan istilah <dt>Arc>.
+      -->
+
+
+    </dl>
+    <!--
+      </dl> merupakan closing tag untuk <dl>.
+
+      Tag ini menandakan bahwa seluruh Description List telah selesai.
+
+      Struktur lengkap Description List pada halaman ini adalah:
+
+      <dl>
+
+        <dt>Google Chrome</dt>
+        <dd>Deskripsi Chrome</dd>
+
+        <dt>Firefox</dt>
+        <dd>Deskripsi Firefox</dd>
+
+        <dt>Safari</dt>
+        <dd>Deskripsi Safari</dd>
+
+        <dt>Brave</dt>
+        <dd>Deskripsi Brave</dd>
+
+        <dt>Arc</dt>
+        <dd>Deskripsi Arc</dd>
+
+      </dl>
+
+      Jadi setiap <dt> memiliki pasangan <dd>
+      yang memberikan penjelasan mengenai istilah tersebut.
+    -->
+
+
+  </body>
+  <!--
+    </body> menandakan bahwa seluruh konten yang ditampilkan
+    pada halaman telah selesai.
+
+    Setelah </body>, dokumen akan ditutup menggunakan </html>.
+  -->
+
+
+</html>
+<!--
+  </html> merupakan closing tag dari elemen utama <html>.
+
+  Dengan tag ini, struktur dokumen HTML selesai.
+
+  Secara umum struktur dasar dokumen HTML adalah:
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!-- Metadata -->
+    </head>
+
+    <body>
+      <!-- Konten halaman -->
+    </body>
+  </html>
+
+  Struktur tersebut merupakan fondasi dasar hampir semua
+  halaman web HTML.
+-->
+```
