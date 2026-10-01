@@ -1,0 +1,7 @@
+Urutan yang Benar: Elemen judul harus berurutan secara logis (misalnya, h1 diikuti oleh h2, lalu h3). Jangan melompat tingkat secara langsung (seperti dari h1 langsung ke h3) agar struktur dokumen tetap rapi.
+
+Gunakan CSS untuk Tampilan: Jangan menggunakan elemen heading tertentu (seperti h1) hanya karena teksnya terlihat besar. Pilih elemen berdasarkan struktur semantiknya, lalu gunakan CSS untuk mengubah ukuran atau gayanya.
+
+Aksesibilitas (Accessibility): Pembaca layar (screen reader) mengandalkan struktur heading ini untuk membantu pengguna memahami isi halaman web dengan benar.
+
+SEO (Search Engine Optimization): Mesin pencari menggunakan struktur HTML yang rapi untuk menentukan konteks dan peringkat halaman web Anda di hasil pencarian.

@@ -1,0 +1,15 @@
+
+Mengapa Anda Harus Peduli Tentang HTML Semantik?
+Semantik adalah arti kata, atau frasa, dalam suatu bahasa. Dalam HTML, yang merupakan bahasa, elemen memiliki makna semantik mereka sendiri juga. Bahkan, Anda dapat memikirkan dokumen HTML Anda seperti Anda akan dokumen teks. Dan seperti dokumen teks, Anda mungkin memiliki judul, gambar, teks tebal, dan pemformatan lainnya.
+
+Makna semantik suatu unsur mengacu pada informasi khusus apa yang disampaikan unsur tersebut. Arti semantik dari a p elemen, misalnya, adalah paragraf teks:
+
+<p>
+  Let me tell you about my fantastic holiday in Paris.
+  I saw the impressive Eiffel Tower up close!
+</p>
+Sebagian besar elemen memiliki makna semantik. The div elemen adalah salah satu dari sangat sedikit yang tidak. Tapi mengapa ini penting?
+
+Pertama dan terpenting, menggunakan HTML semantik yang tepat akan memastikan pengalaman terbaik bagi pengguna dengan teknologi bantu seperti pembaca layar. Tetapi juga, HTML semantik dapat meningkatkan peringkat pencarian Anda. Ini disebut sebagai optimasi mesin pencari, atau SEO.
+
+Akhirnya, menggunakan elemen semantik yang benar dapat meningkatkan pengalaman pengembangan Anda. Daripada harus menyaring banyak divs untuk menemukan bilah navigasi Anda, Anda dapat mengeditnya nav elemen secara langsung dan ketahui apa yang Anda ubah. Sepanjang bagian ini, Anda akan mempelajari lebih lanjut tentang topik-topik ini, cara menggunakan elemen semantik, dan mengapa HTML semantik sangat penting.
