@@ -1,0 +1,210 @@
+# HTML: Menampilkan Alamat dengan Elemen `<address>`
+
+## Apa itu Elemen `<address>`?
+
+Elemen `<address>` digunakan untuk menampilkan **informasi kontak** yang berkaitan dengan suatu bagian pada halaman web.
+
+Informasi yang dapat ditampilkan misalnya:
+
+* Nama perusahaan atau pemilik website
+* Alamat fisik
+* Nomor telepon
+* Alamat email
+* Informasi kontak lainnya
+
+Contoh sederhana:
+
+```html
+<address>
+  PT Teknologi Maju<br>
+  Jl. Merdeka No. 10<br>
+  Yogyakarta, Indonesia
+</address>
+```
+
+Penggunaan `<address>` lebih baik daripada menggunakan `<div>` biasa ketika isi tersebut memang merupakan informasi kontak. Hal ini membuat struktur HTML menjadi lebih **semantik**, karena elemen HTML menjelaskan fungsi dari kontennya.
+
+---
+
+## Penggunaan `<br>` pada Alamat
+
+Elemen `<br>` digunakan untuk membuat **baris baru**.
+
+Dalam alamat, `<br>` sering digunakan untuk memisahkan bagian-bagian alamat seperti nama jalan, kota, dan negara.
+
+Contoh:
+
+```html
+<address>
+  PT Teknologi Maju<br>
+  Jl. Merdeka No. 10<br>
+  Yogyakarta<br>
+  Indonesia
+</address>
+```
+
+Hasilnya akan terlihat seperti:
+
+```text
+PT Teknologi Maju
+Jl. Merdeka No. 10
+Yogyakarta
+Indonesia
+```
+
+Jadi, `<br>` berfungsi untuk memisahkan teks ke baris berikutnya.
+
+---
+
+## Membuat Nomor Telepon Dapat Diklik
+
+Nomor telepon dapat dibuat menjadi link menggunakan elemen `<a>` dengan `href` yang diawali `tel:`.
+
+Contoh:
+
+```html
+<a href="tel:+6281234567890">+62 812-3456-7890</a>
+```
+
+Bagian:
+
+```html
+href="tel:+6281234567890"
+```
+
+memberitahu browser bahwa link tersebut merupakan **nomor telepon**.
+
+Pada perangkat yang mendukungnya, pengguna dapat mengeklik nomor tersebut untuk memulai panggilan.
+
+Contoh penggunaan bersama `<address>`:
+
+```html
+<address>
+  PT Teknologi Maju<br>
+  Jl. Merdeka No. 10<br>
+  Yogyakarta<br>
+  <a href="tel:+6281234567890">+62 812-3456-7890</a>
+</address>
+```
+
+---
+
+## Membuat Alamat Email Dapat Diklik
+
+Untuk membuat link yang dapat membuka aplikasi email, HTML menyediakan skema `mailto:`.
+
+Contoh:
+
+```html
+<a href="mailto:info@teknologimaju.com">
+  info@teknologimaju.com
+</a>
+```
+
+Ketika pengguna mengeklik link tersebut, browser akan mencoba membuka **aplikasi email bawaan atau email client** yang tersedia pada perangkat.
+
+Contoh lengkap:
+
+```html
+<address>
+  PT Teknologi Maju<br>
+  Jl. Merdeka No. 10<br>
+  Yogyakarta, Indonesia<br>
+
+  <a href="tel:+6281234567890">
+    +62 812-3456-7890
+  </a><br>
+
+  <a href="mailto:info@teknologimaju.com">
+    info@teknologimaju.com
+  </a>
+</address>
+```
+
+---
+
+## Apa itu `mailto:`?
+
+`mailto:` adalah skema URL khusus yang digunakan untuk membuat **link email**.
+
+Struktur dasarnya:
+
+```html
+<a href="mailto:alamat@email.com">Alamat Email</a>
+```
+
+Saat diklik, pengguna dapat diarahkan untuk membuat email baru menggunakan email client yang tersedia.
+
+Contohnya:
+
+```html
+<a href="mailto:admin@example.com">Hubungi Admin</a>
+```
+
+---
+
+## Kekurangan `mailto:`
+
+Meskipun praktis, penggunaan `mailto:` memiliki salah satu kekurangan, yaitu **alamat email yang ditampilkan pada halaman web dapat menjadi target spammer**.
+
+Bot atau spammer dapat mencari alamat email yang dipublikasikan di website dan kemudian menggunakannya untuk mengirim email spam.
+
+Karena itu, penggunaan `mailto:` perlu dipertimbangkan terutama pada website yang menampilkan alamat email secara publik.
+
+---
+
+## Contoh Lengkap
+
+Berikut contoh sebuah bagian kontak perusahaan:
+
+```html
+<section>
+  <h2>Hubungi Kami</h2>
+
+  <address>
+    PT Teknologi Maju<br>
+    Jl. Merdeka No. 10<br>
+    Yogyakarta, Indonesia<br>
+
+    Telepon:
+    <a href="tel:+6281234567890">
+      +62 812-3456-7890
+    </a><br>
+
+    Email:
+    <a href="mailto:info@teknologimaju.com">
+      info@teknologimaju.com
+    </a>
+  </address>
+</section>
+```
+
+Pada contoh tersebut terdapat beberapa elemen yang memiliki fungsi berbeda:
+
+| Elemen / atribut | Fungsi                                  |
+| ---------------- | --------------------------------------- |
+| `<address>`      | Menandai informasi kontak               |
+| `<br>`           | Membuat baris baru                      |
+| `<a>`            | Membuat hyperlink                       |
+| `tel:`           | Membuat link untuk nomor telepon        |
+| `mailto:`        | Membuat link untuk membuka email client |
+| `href`           | Menentukan tujuan dari link             |
+
+---
+
+## Kesimpulan
+
+Elemen `<address>` digunakan untuk **merepresentasikan informasi kontak** pada halaman web.
+
+Untuk melengkapi informasi kontak, beberapa elemen dan atribut lain dapat digunakan:
+
+```html
+<address>
+  Nama Perusahaan<br>
+  Alamat Perusahaan<br>
+  <a href="tel:+6281234567890">Nomor Telepon</a><br>
+  <a href="mailto:email@example.com">Alamat Email</a>
+</address>
+```
+
+Dengan menggunakan elemen semantik seperti `<address>`, struktur HTML menjadi lebih jelas dan memiliki makna yang lebih baik dibandingkan menggunakan `<div>` hanya untuk membungkus informasi kontak.
