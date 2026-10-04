@@ -1,0 +1,137 @@
+# HTML: Menampilkan Singkatan dengan Elemen `<abbr>`
+
+## Apa itu Singkatan?
+
+Singkatan adalah bentuk pendek dari sebuah kata atau frasa. Dalam HTML, singkatan dapat berupa **akronim** maupun **inisialisme**.
+
+### 1. Akronim
+
+Akronim adalah singkatan yang dibaca sebagai sebuah kata.
+
+Contoh:
+
+* **GUI** → *Graphical User Interface*
+* **RADAR** → *Radio Detection and Ranging*
+
+### 2. Inisialisme
+
+Inisialisme adalah singkatan yang dibaca dengan menyebutkan setiap hurufnya.
+
+Contoh:
+
+* **HTML** → *HyperText Markup Language*
+* **CSS** → *Cascading Style Sheets*
+* **PHP** → *PHP: Hypertext Preprocessor*
+
+Perbedaan sederhananya adalah **akronim dibaca seperti kata**, sedangkan **inisialisme dibaca huruf per huruf**.
+
+---
+
+## Elemen `<abbr>`
+
+HTML menyediakan elemen `<abbr>` untuk menandai sebuah singkatan atau akronim.
+
+Contoh:
+
+```html
+<p>
+  <abbr>HTML</abbr> adalah fondasi utama dalam pembuatan halaman web.
+</p>
+```
+
+Elemen `<abbr>` memberikan informasi semantik kepada browser bahwa teks tersebut merupakan sebuah singkatan.
+
+Secara visual, teks biasanya tetap terlihat seperti teks biasa. Jadi, penggunaan `<abbr>` lebih berfungsi untuk memberikan **konteks dan makna pada struktur HTML**.
+
+---
+
+## Atribut `title`
+
+Untuk memberikan bentuk lengkap atau penjelasan dari sebuah singkatan, elemen `<abbr>` dapat menggunakan atribut `title`.
+
+Contoh:
+
+```html
+<p>
+  <abbr title="HyperText Markup Language">HTML</abbr>
+  digunakan untuk membuat struktur halaman web.
+</p>
+```
+
+Pada contoh tersebut:
+
+* `<abbr>` → menandai `HTML` sebagai singkatan.
+* `title` → memberikan bentuk lengkap dari singkatan tersebut.
+* `"HyperText Markup Language"` → merupakan kepanjangan dari HTML.
+
+Ketika pengguna mengarahkan kursor ke singkatan tersebut, browser biasanya akan menampilkan nilai `title` sebagai **tooltip**.
+
+---
+
+## Mengapa `<abbr>` Berguna?
+
+Penggunaan `<abbr>` membantu membuat HTML lebih **semantik**. Browser dan teknologi pendukung dapat memahami bahwa teks tertentu merupakan sebuah singkatan.
+
+Contohnya:
+
+```html
+<p>
+  Saya sedang belajar
+  <abbr title="HyperText Markup Language">HTML</abbr>
+  dan
+  <abbr title="Cascading Style Sheets">CSS</abbr>.
+</p>
+```
+
+Kode tersebut lebih informatif dibandingkan hanya menulis:
+
+```html
+<p>Saya sedang belajar HTML dan CSS.</p>
+```
+
+Karena HTML dan CSS secara eksplisit ditandai sebagai singkatan dan memiliki penjelasan lengkapnya.
+
+---
+
+## Kapan Sebaiknya Menggunakan `<abbr>`?
+
+Tidak semua singkatan harus selalu menggunakan `<abbr>`. Elemen ini paling berguna ketika singkatan:
+
+* belum tentu diketahui oleh pembaca,
+* membutuhkan konteks tambahan,
+* memiliki kepanjangan yang penting untuk diketahui,
+* atau digunakan dalam materi teknis.
+
+Contoh yang baik:
+
+```html
+<p>
+  Website ini menggunakan
+  <abbr title="Application Programming Interface">API</abbr>
+  untuk berkomunikasi dengan server.
+</p>
+```
+
+Dengan cara ini, pembaca yang belum mengetahui API tetap dapat memahami kepanjangannya.
+
+---
+
+## Kesimpulan
+
+Elemen `<abbr>` digunakan untuk **menandai singkatan atau akronim dalam HTML**.
+
+Atribut `title` dapat digunakan untuk memberikan **bentuk lengkap atau penjelasan** dari singkatan tersebut.
+
+Pola sederhananya:
+
+```html
+<abbr title="Bentuk Lengkap">Singkatan</abbr>
+```
+
+Contoh:
+
+```html
+<abbr title="HyperText Markup Language">HTML</abbr>
+```
+
+Penggunaan `<abbr>` merupakan bagian dari **HTML semantik**, karena memberikan makna tambahan terhadap teks tanpa harus mengubah tampilan utamanya.
