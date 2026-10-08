@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form, Label, dan Input</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Form, Label, dan Input</h1>
+
+      <section>
+        <h2>Basic Form</h2>
+
+        <form action="/submit">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name">
+        </form>
+      </section>
+
+      <section>
+        <h2>Input Email</h2>
+
+        <form action="/submit">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+          >
+        </form>
+      </section>
+
+      <section>
+        <h2>Implicit Association</h2>
+
+        <form action="/submit">
+          <label>
+            Username:
+            <input type="text">
+          </label>
+
+          <label>
+            Email:
+            <input
+              type="email"
+              placeholder="example@email.com"
+            >
+          </label>
+        </form>
+      </section>
+
+      <section>
+        <h2>Explicit Association</h2>
+
+        <form action="/submit">
+          <label for="full-name">Full Name:</label>
+          <input
+            type="text"
+            id="full-name"
+            placeholder="John Doe"
+          >
+
+          <label for="user-email">Email:</label>
+          <input
+            type="email"
+            id="user-email"
+            placeholder="example@email.com"
+          >
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="18"
+          >
+        </form>
+      </section>
+
+      <section>
+        <h2>Complete Form</h2>
+
+        <form action="/submit">
+          <div>
+            <label for="name-input">Full Name:</label>
+            <input
+              type="text"
+              id="name-input"
+              placeholder="John Doe"
+            >
+          </div>
+
+          <div>
+            <label for="email-input">Email:</label>
+            <input
+              type="email"
+              id="email-input"
+              placeholder="example@email.com"
+            >
+          </div>
+
+          <div>
+            <label for="age-input">Age:</label>
+            <input
+              type="number"
+              id="age-input"
+              placeholder="18"
+            >
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
