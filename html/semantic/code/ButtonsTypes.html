@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Button Types</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>HTML Button Types</h1>
+
+      <section>
+        <h2>1. Tombol Biasa</h2>
+
+        <p>
+          Tombol biasa tidak mengirim atau mereset formulir
+          secara otomatis.
+        </p>
+
+        <button type="button">Click Me</button>
+      </section>
+
+      <section>
+        <h2>2. Tombol Submit</h2>
+
+        <form action="#" method="get">
+          <label for="submit-name">Nama:</label>
+
+          <input
+            type="text"
+            id="submit-name"
+            name="name"
+            placeholder="Masukkan nama"
+          >
+
+          <button type="submit">Submit Form</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>3. Tombol Reset</h2>
+
+        <form>
+          <label for="reset-name">Nama:</label>
+
+          <input
+            type="text"
+            id="reset-name"
+            name="name"
+            value="Akbar"
+          >
+
+          <button type="reset">Reset Form</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>4. Input sebagai Tombol</h2>
+
+        <form>
+          <label for="input-name">Nama:</label>
+
+          <input
+            type="text"
+            id="input-name"
+            name="input-name"
+            value="Akbar"
+          >
+
+          <p>Tombol dari elemen input:</p>
+
+          <input type="button" value="Tombol Biasa">
+          <input type="reset" value="Reset Input">
+          <input type="submit" value="Submit Input">
+        </form>
+      </section>
+
+      <section>
+        <h2>5. Perbedaan Elemen Button dan Input</h2>
+
+        <button type="button">
+          Tombol dengan <strong>HTML</strong>
+        </button>
+
+        <input type="button" value="Tombol dengan Input">
+      </section>
+    </main>
+  </body>
+</html>

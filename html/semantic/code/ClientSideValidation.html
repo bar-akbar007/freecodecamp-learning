@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Side Form Validation</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Client-Side Form Validation</h1>
+
+      <section>
+        <h2>1. Atribut Required</h2>
+
+        <p>
+          Coba kirim formulir ketika kolom masih kosong.
+        </p>
+
+        <form action="#" method="get">
+          <label for="required-email">
+            Email:
+          </label>
+
+          <input
+            type="email"
+            id="required-email"
+            name="requiredEmail"
+            required
+          >
+
+          <button type="submit">
+            Submit Form
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h2>2. Validasi Format Email</h2>
+
+        <p>
+          Coba masukkan teks biasa seperti abc,
+          kemudian tekan tombol submit.
+        </p>
+
+        <form action="#" method="get">
+          <label for="format-email">
+            Email:
+          </label>
+
+          <input
+            type="email"
+            id="format-email"
+            name="formatEmail"
+            placeholder="example@email.com"
+            required
+          >
+
+          <button type="submit">
+            Check Email
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h2>3. Atribut Minlength</h2>
+
+        <p>
+          Input harus berisi minimal 6 karakter.
+        </p>
+
+        <form action="#" method="get">
+          <label for="minlength-email">
+            Email:
+          </label>
+
+          <input
+            type="email"
+            id="minlength-email"
+            name="minlengthEmail"
+            minlength="6"
+            required
+          >
+
+          <button type="submit">
+            Check Minlength
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h2>4. Atribut Maxlength</h2>
+
+        <p>
+          Input dibatasi maksimal 20 karakter.
+        </p>
+
+        <form action="#" method="get">
+          <label for="maxlength-email">
+            Email:
+          </label>
+
+          <input
+            type="email"
+            id="maxlength-email"
+            name="maxlengthEmail"
+            maxlength="20"
+            required
+          >
+
+          <button type="submit">
+            Check Maxlength
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h2>5. Menggabungkan Semua Validasi</h2>
+
+        <p>
+          Masukkan email dengan panjang 6 sampai 50 karakter.
+        </p>
+
+        <form action="#" method="get">
+          <label for="complete-email">
+            Email:
+          </label>
+
+          <input
+            type="email"
+            id="complete-email"
+            name="email"
+            placeholder="example@email.com"
+            minlength="6"
+            maxlength="50"
+            required
+          >
+
+          <button type="submit">
+            Submit Form
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
