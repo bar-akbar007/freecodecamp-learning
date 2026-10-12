@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Form States</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .form-group {
+        margin-bottom: 24px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #999;
+        border-radius: 4px;
+      }
+
+      input:focus {
+        outline: 2px solid blue;
+        outline-offset: 2px;
+      }
+
+      input:disabled {
+        background-color: #e5e5e5;
+        color: #777;
+        cursor: not-allowed;
+      }
+
+      input:read-only {
+        background-color: #f3f3f3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>HTML Form States</h1>
+
+      <p>
+        Coba setiap input untuk memahami perbedaan
+        default, focused, disabled, dan readonly.
+      </p>
+
+      <form action="#" method="get">
+        <section>
+          <h2>1. Default State</h2>
+
+          <div class="form-group">
+            <label for="default-email">
+              Email:
+            </label>
+
+            <input
+              type="email"
+              id="default-email"
+              name="default_email"
+              placeholder="Masukkan email"
+            >
+          </div>
+        </section>
+
+        <section>
+          <h2>2. Focused State</h2>
+
+          <div class="form-group">
+            <label for="focused-email">
+              Email:
+            </label>
+
+            <input
+              type="email"
+              id="focused-email"
+              name="focused_email"
+              placeholder="Klik atau gunakan Tab"
+            >
+          </div>
+        </section>
+
+        <section>
+          <h2>3. Disabled State</h2>
+
+          <div class="form-group">
+            <label for="disabled-email">
+              Email:
+            </label>
+
+            <input
+              type="email"
+              id="disabled-email"
+              value="disabled@example.com"
+              disabled
+            >
+          </div>
+        </section>
+
+        <section>
+          <h2>4. Readonly State</h2>
+
+          <div class="form-group">
+            <label for="readonly-email">
+              Email:
+            </label>
+
+            <input
+              type="email"
+              id="readonly-email"
+              name="readonly_email"
+              value="example@email.com"
+              readonly
+            >
+          </div>
+        </section>
+
+        <button type="submit">
+          Submit Form
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
